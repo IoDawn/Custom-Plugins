@@ -8,7 +8,6 @@ from userbot.events import register
 PLACE = ""
 
 @bot.on(sudo_cmd(pattern=r"<command> (\w*)", allow_sudo=True))
-
 @register(pattern="^.adzan(?: |$)(.*)")
 async def get_adzan(adzan):
     if not adzan.pattern_match.group(1):
